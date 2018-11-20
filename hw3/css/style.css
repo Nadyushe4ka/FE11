@@ -24,68 +24,78 @@ html{
 .menu{
     text-align: center;
     vertical-align: middle;
+    font-size: 0;
 }
 .menu-item{
-    height: 11px;
     display: inline-block;
     text-transform: uppercase;
     margin-right: 120px;
+    font-size: 14px;
 }
+.menu-item a:hover,
+.menu-item a:focus{
+    color: #03a9f4;
+}
+
 ul li:last-child{
     margin-right: 0;
 }
 .menu-link{
-    height: 11px;
     color: #626262;
     text-decoration-line: none;
     font-family: "Playfair Display";
     text-align: center;
-}
-.menu-link1{
-    height: 11px;
-    color: #03a9f4;
-    text-decoration-line: none;
-    font-family: "Playfair Display";
-    text-align: center;
+    display: block;
 }
 
 /*Main menu*/
 main{
     font-size: 0;
     }
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+     }
 .list{
     width: 420px;
     display: inline-block;
     margin-right: 60px;
-    margin-bottom: 122px;
+    margin-bottom: 130px;
 }
 .list:nth-child(2n){
     margin-right: 0;
 }
 .list:nth-last-child(-n+3){
-    margin-bottom: 0px;
+    margin-bottom: 52px;
 }
 img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 32px;
+}
+.list-image{
+    margin-bottom: 26px;
 }
 .box-subtitle {
     font-size: 14px;
     text-transform: uppercase;
-    height: 27px;
     font-family: "Ubuntu";
     margin-bottom: 24px;
 }
 .box-title{
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     font-family: "Playfair Display";
 }
 p{
-    width: 414px;
-    height: 63px;
     font-size: 14px;
     line-height: 24px;
     color: #626262;
@@ -99,9 +109,16 @@ p{
     line-height: 24px;
     color: #626262;
     font-family: "Playfair Display";
-    margin: 52px 380px 70px 358px;
+    margin: auto;
+    width: 165px;
+    height: 61px;
     padding: 18px 32px;
-    background-color: #ddddd7;
     border: 1px solid #626262;
     cursor: pointer;
+    margin-bottom: 70px;
+    display: block;
+}
+.btn-footer:hover,
+.btn-footer:focus {
+    background-color:#ddddd7;
 }
