@@ -1,0 +1,215 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-shadow: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1110px;
+    height: 100vh;
+    color:#555252;
+    margin: 0 auto;
+}
+
+/*Nav menu*/
+.page-nav{
+    padding: 43px 0;
+}
+.menu{
+    vertical-align: middle;
+    font-size: 0;
+    text-align: left;
+}
+.menu-item{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 34px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.menu-item a:hover,
+.menu-item a:focus{
+    color: #1abc9c;
+}
+.menu .menu-item:last-child{
+    margin-right: 0;
+}
+.menu .menu-item:first-child{
+    padding-right: 406px;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 32px;
+}
+.menu .menu-item:first-child::first-letter{
+    color: #1abc9c;
+    font-weight: 800;
+}
+.menu-link{
+    color: #626262;
+    text-decoration-line: none;
+    display: block;
+}
+/*Main menu*/
+main{
+    font-size: 0;
+}
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.topic{
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #555252;
+    font-family: "Roboto";
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.topic-image1{
+    display: block;
+    margin: auto;
+    margin-bottom: 92px;
+}
+.topic-image2{
+    margin: auto;
+    display: block;
+    margin-bottom: 80px;
+}
+.product-list{
+    margin-bottom: 114px;
+    font-family: "Roboto";
+    font-weight: 800;
+    text-align: left;
+    vertical-align: middle;
+}
+.list-1{
+    width: 255px;
+    height: 320px;
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #e9f0fd;
+}
+.list-1:nth-child(4n+5){
+    margin-right: 0;
+}
+.list-1:nth-last-child(-n+4){
+    margin-bottom: 0px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.box-title{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: black;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    vertical-align: middle;
+    text-indent: 1rem;
+}
+.box-price {
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 55px;
+    height: 40px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    background-color: gray;
+    vertical-align: bottom
+}
+.list-1:hover .box-title{
+    background-color: #1abc9c;
+}
+.list-1:hover .box-price{
+    background-color: #7fd9c7;
+}
+.blog-list{
+    font-family: "Open Sans";
+}
+.list-2{
+    width: 350px;
+    height: 495px;
+    display: inline-block;
+    color: #555252;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.list-2:nth-child(3n){
+    margin-right: 0;
+}
+.list-2:nth-last-child(-n+4){
+    margin-bottom: 0px;
+}
+.blog-image{
+    margin-bottom:10px;
+}
+.blog-title{
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    margin-bottom: 11px;
+}
+.blog-subtitle{
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+    font-family: "Playfair Display";
+    margin-bottom: 12px;
+}
+.title-image{
+    margin-bottom:24px;
+}
+
+/*Button*/
+.btn{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    width: 160px;
+    height: 50px;
+    padding: 18px 32px;
+    cursor: pointer;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.39);
+    background-color: #4ec6ab;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: text-top;
+}
+.btn:hover,
+.btn:focus {
+    background-color:#ddddd7;
+}
+.blog-list{
+    margin-bottom: 82px;
+}
