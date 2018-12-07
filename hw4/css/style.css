@@ -21,34 +21,35 @@ img{
     max-width: 100%;
     height: auto;
 }
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
 /*Nav menu*/
 .page-nav{
     margin: 0;
     padding: 38px 0 120px 0;
     list-style: none;
     box-sizing: border-box;
-    display: inline-block;
-    width: 1110px;
+    text-transform: uppercase;
 }
 .menu{
-    vertical-align: middle;
-    font-size: 0;
-    width: 1000px;
-    text-align: right;
-    margin-right: 0 !important;
-}
-.menu li{
-    display: inline-block;
-}
-.menu-item{
-    text-transform: uppercase;
-    margin-right: 34px;
+    width: 480px;
+    margin: 0;
+    padding: 0;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 0;
-    vertical-align: middle;
+    float: right;
+    margin-top: 10px;
 }
+.menu li{
+    float: left;
+}
+.menu-item{
+    margin-right: 34px;
+    }
 .menu-item a:hover,
 .menu-item a:focus{
     color: #1abc9c;
@@ -66,7 +67,6 @@ img{
     line-height: 32px;
     color: #626262;
     text-decoration-line: none;
-    vertical-align: middle;
 }
 .menu-logo:first-letter{
     color: #1abc9c;
@@ -83,7 +83,6 @@ img{
 }
 /*Main menu*/
 main{
-    font-size: 0;
 }
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
     position: absolute;
@@ -123,17 +122,17 @@ main{
     font-family: "Roboto";
     font-weight: 800;
     text-align: left;
-    vertical-align: middle;
 }
 .list-1{
+    float: left;
     width: 255px;
     height: 320px;
-    display: inline-block;
     color: #ffffff;
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: #e9f0fd;
 }
+
 .list-1:nth-child(4n){
     margin-right: 0;
 }
@@ -145,10 +144,8 @@ main{
     font-size: 18px;
     line-height: 32px;
     background-color: black;
-    display: inline-block;
     width: 200px;
     height: 40px;
-    vertical-align: middle;
     text-indent: 1rem;
 }
 .box-price {
@@ -157,11 +154,9 @@ main{
     width: 55px;
     height: 40px;
     color: white;
-    display: inline-block;
-    vertical-align: middle;
     text-align: center;
     background-color: gray;
-    vertical-align: bottom
+    clear: left
 }
 .list-1:hover .box-title{
     background-color: #1abc9c;
@@ -173,9 +168,9 @@ main{
     font-family: "Open Sans";
 }
 .list-2{
+    float: left;
     width: 350px;
     height: 495px;
-    display: inline-block;
     color: #555252;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -191,7 +186,6 @@ main{
 }
 .blog-title{
     font-size: 18px;
-    letter-spacing: 0;
     line-height: 26px;
     margin-bottom: 11px;
 }
