@@ -143,11 +143,12 @@ main{
 .box-title{
     text-transform: uppercase;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 40px;
     background-color: black;
     width: 200px;
     height: 40px;
     text-indent: 1rem;
+    float: left;
 }
 .box-price {
     font-size: 18px;
@@ -157,7 +158,8 @@ main{
     color: white;
     text-align: center;
     background-color: gray;
-    /* clear: left */
+    float: right;
+    line-height: 40px;
 }
 .list-1:hover .box-title{
     background-color: #1abc9c;
