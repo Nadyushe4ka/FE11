@@ -29,10 +29,13 @@ img{
 /*Nav menu*/
 .page-nav{
     margin: 0;
-    padding: 38px 0 120px 0;
+    padding-top : 38px;
     list-style: none;
     box-sizing: border-box;
     text-transform: uppercase;
+}
+.head-menu{
+    margin-bottom: 120px;
 }
 .menu{
     width: 500px;
@@ -84,19 +87,7 @@ img{
 /*Main menu*/
 main{
 }
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-.topic{
+.topic-1{
     text-transform: uppercase;
     font-size: 48px;
     letter-spacing: -1px;
@@ -105,23 +96,45 @@ main{
     font-family: "Roboto";
     font-weight: 800;
     text-align: center;
-    margin-bottom: 40px;
-}
-.topic-image1{
-    display: block;
-    margin: auto;
     margin-bottom: 92px;
 }
-.topic-image2{
-    margin: auto;
+.topic-1:after{
+    content: '';
     display: block;
+    background-image: url(../image/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 7px;
+    margin-top: 40px;
+}
+.topic-2{
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #555252;
+    font-family: "Roboto";
+    font-weight: 800;
+    text-align: center;
     margin-bottom: 80px;
 }
+.topic-2:after{
+    content: '';
+    display: block;
+    background-image: url(../image/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 7px;
+    margin-top: 40px;
+}
+
 .product-list{
-    margin-bottom: 114px;
     font-family: "Roboto";
     font-weight: 800;
     text-align: left;
+}
+.products{
+    padding-bottom: 114px;
 }
 .list-1{
     float: left;
@@ -132,8 +145,6 @@ main{
     margin-bottom: 30px;
     background-color: #e9f0fd;
 }
-
-
 .list-1:nth-child(4n){
     margin-right: 0;
 }
@@ -190,7 +201,15 @@ main{
 .blog-title{
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 11px;
+    margin-bottom: 24px;
+}
+.blog-title:after{
+    content: '';
+    display: block;
+    background-image: url(../image/Rectangle35.png);
+    background-repeat: no-repeat;
+    height: 7px;
+    margin-top: 10px;
 }
 .blog-subtitle{
     font-size: 14px;
@@ -199,14 +218,12 @@ main{
     font-family: "Playfair Display";
     margin-bottom: 12px;
 }
-.title-image{
-    margin-bottom:24px;
-}
 
 /*Button*/
 .btn{
     font-size: 16px;
-    line-height: 26px;
+    line-height: 50px;
+    font-family: "Open Sans";
     color: #ffffff;
     width: 160px;
     height: 50px;
@@ -217,11 +234,12 @@ main{
     background-color: #4ec6ab;
     font-weight: 300;
     text-align: center;
+    text-decoration-line: none;
 }
 .btn:hover,
 .btn:focus {
     background-color:#ddddd7;
 }
-.blog-list{
-    margin-bottom: 82px;
+.blog{
+    padding-bottom: 82px;
 }
